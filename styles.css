@@ -1,0 +1,233 @@
+/* ====== BODY ====== */
+body {
+    background-color: #ffffff; /* Menetapkan warna latar belakang putih */
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    margin: 0; /* Menghapus margin default */
+    padding: 0; /* Menghapus padding default */
+    text-align: center; /* Menyatukan teks ke tengah */
+}
+
+/* ====== NAVBAR ====== */
+.bg-biru {
+    background-color: #87CEEB !important; /* Warna navbar biru langit */
+}
+
+.navbar-nav .nav-link {
+    color: black !important; /* Warna teks navbar hitam */
+    position: relative; /* Menjadikan posisi relatif untuk pengaturan elemen */
+}
+
+.navbar-nav .nav-link.active::after {
+    content: ''; /* Menambahkan garis bawah pada menu yang aktif */
+    display: block; /* Menampilkan elemen setelah link */
+    width: 100%; /* Lebar garis sama dengan lebar link */
+    height: 3px; /* Tinggi garis bawah */
+    background-color: white; /* Warna garis bawah putih */
+    position: absolute; /* Mengatur posisi garis bawah */
+    bottom: -5px; /* Jarak dari bawah */
+    left: 0; /* Memulai dari sisi kiri */
+}
+
+/* ====== HOME SECTION ====== */
+#home {
+    background-color: white; /* Warna latar belakang putih */
+    padding: 80px 20px; /* Padding untuk memberi ruang di sekitar konten */
+    text-align: center; /* Menyatukan teks ke tengah */
+    color: black; /* Warna teks hitam */
+}
+
+.home-content {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    align-items: center; /* Menyusun item secara vertikal di tengah */
+    justify-content: space-between; /* Membuat jarak antar elemen */
+    flex-wrap: wrap; /* Mengatur elemen agar fleksibel dan tidak keluar dari layar */
+    max-width: 1000px; /* Batas maksimal lebar konten */
+    margin: auto; /* Menjaga konten tetap terpusat */
+    flex-direction: row; /* Menyusun elemen secara horizontal */
+}
+
+.home-text {
+    max-width: 500px; /* Membatasi lebar teks */
+    text-align: left; /* Menyusun teks ke kiri */
+}
+
+.home-image img {
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    width: 250px; /* Lebar gambar */
+    height: 250px; /* Tinggi gambar */
+    object-fit: cover; /* Menyesuaikan gambar agar tidak terdistorsi */
+    border: 5px solid #87CEEB; /* Border biru pada gambar */
+}
+
+/* ====== ABOUT SECTION ====== */
+#about {
+    background-color: #87CEEB; /* Warna latar biru langit */
+    padding: 40px 20px; /* Padding untuk memberi ruang di sekitar konten */
+    text-align: center; /* Menyatukan teks ke tengah */
+    color: black; /* Warna teks hitam */
+}
+
+.about-container {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    align-items: center; /* Menyusun elemen secara vertikal di tengah */
+    justify-content: flex-start; /* Menyusun elemen ke kiri */
+    flex-wrap: wrap; /* Mengatur elemen agar fleksibel */
+    max-width: 900px; /* Batas maksimal lebar konten */
+    margin: auto; /* Menjaga konten tetap terpusat */
+    gap: 30px; /* Memberikan jarak antar elemen */
+}
+
+.about-container img {
+    width: 500px; /* Lebar gambar */
+    height: 500px; /* Tinggi gambar */
+    border-radius: 10px; /* Membuat sudut gambar melengkung */
+    object-fit: cover; /* Menyesuaikan gambar agar tidak terdistorsi */
+    border: 5px solid white; /* Border putih pada gambar */
+    margin-left: -200px; /* Margin negatif untuk memindahkan gambar lebih ke kiri */
+}
+
+.about-text {
+    max-width: 500px; /* Membatasi lebar teks */
+    text-align: justify; /* Meratakan teks ke kiri dan kanan */
+    flex: 1; /* Memungkinkan teks untuk mengambil sisa ruang */
+}
+
+/* ====== SKILL SECTION ====== */
+#skill {
+    background-color: white; /* Warna latar belakang putih */
+    padding: 60px 20px; /* Padding untuk memberi ruang di sekitar konten */
+    text-align: center; /* Menyatukan teks ke tengah */
+    color: black; /* Warna teks hitam */
+}
+
+.skill-container {
+    max-width: 500px; /* Membatasi lebar kontainer skill */
+    margin: auto; /* Menjaga konten tetap terpusat */
+    text-align: left; /* Menyusun teks ke kiri */
+}
+
+/* ====== EDUCATION SECTION ====== */
+#education {
+    background-color: #87CEEB; /* Warna latar biru langit */
+    padding: 60px 20px; /* Padding untuk memberi ruang di sekitar konten */
+    text-align: center; /* Menyatukan teks ke tengah */
+    color: black; /* Warna teks hitam */
+}
+
+.education-container {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: center; /* Memusatkan elemen secara horizontal */
+    gap: 20px; /* Memberikan jarak antar elemen */
+    flex-wrap: wrap; /* Memastikan elemen tidak keluar dari layar pada tampilan kecil */
+}
+
+.education-card {
+    width: 300px; /* Lebar kartu pendidikan */
+    height: 300px; /* Tinggi kartu pendidikan */
+    background: white; /* Warna latar belakang kartu */
+    border-radius: 10px; /* Membuat sudut kartu melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan kartu untuk tampilan menarik */
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    align-items: center; /* Memusatkan elemen di dalam kartu */
+    justify-content: center; /* Memusatkan konten secara vertikal */
+    text-align: center; /* Menyatukan teks di tengah */
+    padding: 10px; /* Memberikan ruang di dalam kartu */
+    color: black; /* Warna teks hitam */
+}
+
+.education-card img {
+    width: 200px; /* Lebar gambar di dalam kartu */
+    height: 200px; /* Tinggi gambar di dalam kartu */
+    object-fit: cover; /* Menyesuaikan gambar agar tidak terdistorsi */
+    border-radius: 10px; /* Membuat sudut gambar melengkung */
+}
+
+.education-card .school-name {
+    font-size: 18px; /* Ukuran font untuk nama sekolah */
+    font-weight: bold; /* Membuat teks tebal */
+    margin-top: 10px; /* Memberikan jarak atas dari gambar */
+}
+
+.education-card .graduation-year {
+    font-size: 16px; /* Ukuran font untuk tahun kelulusan */
+    color: gray; /* Warna teks abu-abu */
+}
+
+/* ====== CONTACT SECTION ====== */
+#contact {
+    background-color: white; /* Warna latar belakang putih */
+    padding: 60px 20px; /* Padding untuk memberi ruang di sekitar konten */
+    text-align: center; /* Menyatukan teks ke tengah */
+    color: black; /* Warna teks hitam */
+}
+
+.contact-box {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: center; /* Memusatkan elemen secara horizontal */
+    gap: 20px; /* Memberikan jarak antar elemen */
+    flex-wrap: wrap; /* Memastikan elemen tidak keluar dari layar pada tampilan kecil */
+}
+
+.contact-card {
+    text-align: center; /* Menyatukan teks di tengah */
+    padding: 20px; /* Memberikan ruang di dalam kartu */
+    border-radius: 10px; /* Membuat sudut kartu melengkung */
+    background: white; /* Warna latar belakang kartu */
+    width: 200px; /* Lebar kartu kontak */
+    color: black; /* Warna teks hitam */
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background-color: #87CEEB; /* Warna latar biru langit */
+    padding: 10px; /* Padding untuk memberi ruang di sekitar footer */
+    color: rgb(15, 15, 15); /* Warna teks hitam */
+    font-weight: bold; /* Menebalkan teks footer */
+    text-align: center; /* Menyatukan teks ke tengah */
+}
+
+/* ====== SOCIAL ICONS ====== */
+.social-icons {
+    margin: 10px 0; /* Memberikan jarak vertikal pada ikon sosial */
+}
+
+.icon {
+    display: inline-block; /* Menampilkan ikon secara inline-block */
+    margin: 0 10px; /* Memberikan jarak antar ikon */
+    font-size: 24px; /* Ukuran font untuk ikon */
+    width: 40px; /* Lebar ikon */
+    height: 40px; /* Tinggi ikon */
+    line-height: 40px; /* Menyamakan tinggi dan lebar untuk memusatkan ikon */
+    border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
+    text-align: center; /* Menyatukan teks di tengah */
+    color: white; /* Warna teks putih */
+}
+
+.icon.wa {
+    background-color: #25D366; /* Warna hijau untuk WhatsApp */
+}
+
+.icon.ig {
+    background-color: #E4405F; /* Warna merah muda untuk Instagram */
+}
+
+.icon.email {
+    background-color: #D44638; /* Warna merah untuk email */
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Memperbesar ikon saat hover */
+    background-color: white; /* Ubah latar belakang menjadi putih */
+    color: black; /* Ubah warna ikon menjadi hitam saat hover */
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Mengubah layout menjadi kolom pada layar kecil */
+        text-align: center; /* Menyatukan teks ke tengah */
+        gap: 30px; /* Memberikan jarak antar elemen */
+        justify-content: center; /* Menyusun elemen secara vertikal */
+    }
+}
